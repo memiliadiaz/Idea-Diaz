@@ -1,0 +1,108 @@
+.grilla {
+    grid-gap: 5px;
+    display: grid;
+    grid-template-columns: (2, 1fr);
+    grid-template-rows: 1.25fr 0.5fr 1.5fr 1fr 0.5fr 0.5fr;
+    grid-template-areas:
+        "headerind headerind"
+        "primeraSeccion primeraSeccion"
+        "video segundaSeccion"
+        "terceraSeccion terceraSeccion"
+        "form form"
+        "footerind footerind"
+    ;
+    color: black;
+
+    .primeraSeccion {
+        grid-area: primeraSeccion;
+        background-color: #E9E9E1;
+        font-family: 'PT Sans', sans-serif;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        padding: 2% 10% 2% 10%;
+    }
+
+    .video {
+        grid-area: video;
+        background-color: #E9E9E1;
+
+        video {
+            width: 100%;
+        }
+    }
+
+    .segundaSeccion {
+        grid-area: segundaSeccion;
+        background-image: url(../img/shutterstock_327302726-1500x430.jpg);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        .t1 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 20px;
+            letter-spacing: 4px;
+        }
+
+        .t2 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 45px;
+            letter-spacing: 5px;
+        }
+    }
+
+    .terceraSeccion {
+        grid-area: terceraSeccion;
+        background-color: #E9E9E1;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        padding: 2% 15% 2% 15%;
+
+        .t3 {
+            font-family: 'PT Sans', sans-serif;
+            font-size: 18px;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .grilla {
+        grid-template-rows: 1fr 1fr 1.5fr 1.5fr 2fr 1fr 0.5fr;
+        grid-template-areas:
+            "headerind headerind"
+            "primeraSeccion primeraSeccion"
+            "video video"
+            "segundaSeccion segundaSeccion"
+            "terceraSeccion terceraSeccion"
+            "form form"
+            "footerind footerind"
+        ;
+        .video {
+            display: flex;
+        }
+        .segundaSeccion {
+            justify-content: center;
+            align-items: flex-start;
+            padding: 10px;
+        }
+    }
+}
+
+/*DISPOSITIVO CHICOS // SM */
+@media (max-width:375px) {
+    .grilla {
+        grid-template-rows: 1fr 1fr 1.5fr 1.5fr 2fr 1fr 1fr;
+        grid-template-areas:
+            "headerind headerind"
+            "primeraSeccion primeraSeccion"
+            "video video"
+            "segundaSeccion segundaSeccion"
+            "terceraSeccion terceraSeccion"
+            "form form"
+            "footerind footerind"
+        ;
+    }
+}

@@ -1,0 +1,230 @@
+.grillapro {
+    grid-gap: 5px;
+    display: grid;
+    grid-template-columns: (2, 1fr);
+    grid-template-rows: 1fr 1.25fr 1.25fr 1.25fr 1.25fr 1fr 0.25fr 0.25fr;
+    grid-template-areas:
+        "headerind headerind"
+        "proyectos1 proyectos1"
+        "proyectos2 proyectos2"
+        "proyectos3 proyectos3"
+        "proyectos4 proyectos4"
+        "form form"
+        "footerind footerind"
+    ;
+    color: black;
+
+    .proyectos1 {
+        grid-area: proyectos1;
+        background-color: #E9E9E1;
+        display: flex;
+        flex-direction: column;
+
+        .titulop {
+            display: flex;
+            justify-content: center;
+            font-family: 'Antic', sans-serif;
+            color: #C9C91E;
+            text-align: center;
+            font-size: 30px;
+            letter-spacing: 8px;
+            margin: 10px;
+        }
+
+        section {
+            display: flex;
+            flex-direction: row;
+            section{
+                img {
+                    width: 340px;
+                    height: 190px;
+                    margin: 15px;
+                }
+            }
+        }
+    }
+
+    .proyectos2 {
+        grid-area: proyectos2;
+        background-color: #E9E9E1;
+        display: flex;
+        flex-direction: column;
+
+        .titulop {
+            display: flex;
+            justify-content: center;
+            font-family: 'Antic', sans-serif;
+            color: #C9C91E;
+            text-align: center;
+            font-size: 30px;
+            letter-spacing: 8px;
+            margin: 10px;
+        }
+
+        section {
+            display: flex;
+            flex-direction: row;
+            section{
+                img {
+                    width: 340px;
+                    height: 190px;
+                    margin: 15px;
+                }
+            }
+        }
+    }
+
+    .proyectos3 {
+        grid-area: proyectos3;
+        background-color: #E9E9E1;
+        display: flex;
+        flex-direction: column;
+
+        .titulop {
+            display: flex;
+            justify-content: center;
+            font-family: 'Antic', sans-serif;
+            color: #C9C91E;
+            text-align: center;
+            font-size: 30px;
+            letter-spacing: 8px;
+            margin: 10px;
+        }
+
+        section {
+            display: flex;
+            flex-direction: row;
+            section{
+                img {
+                    width: 340px;
+                    height: 190px;
+                    margin: 15px;
+                }
+            }
+        }
+    }
+
+    .proyectos4 {
+        grid-area: proyectos4;
+        background-color: #E9E9E1;
+        display: flex;
+        flex-direction: column;
+
+        .titulop {
+            display: flex;
+            justify-content: center;
+            font-family: 'Antic', sans-serif;
+            color: #C9C91E;
+            text-align: center;
+            font-size: 30px;
+            letter-spacing: 8px;
+            margin: 10px;
+        }
+
+        section {
+            display: flex;
+            flex-direction: row;
+            section{
+                img {
+                    width: 340px;
+                    height: 190px;
+                    margin: 15px;
+                }
+            }
+        }
+    }
+}
+//RESPONSIVE DESING - MEDIA QUERY - MOBILE LAST/
+//MOBILE LAST = MAX-WIDTH/
+@media (max-width: 768px) {
+    .grillapro {
+        grid-template-rows: 0.5fr 2fr 2fr 2fr 2fr 0.5fr 0.5fr;
+        .proyectos1 {
+            display: flex;
+            flex-direction: column;
+            section {
+                section {
+                    display: flex;
+                    flex-direction: row;
+                }
+            }
+        }
+        .proyectos2 {
+            display: flex;
+            flex-direction: column;
+            section {
+                section {
+                    display: flex;
+                    flex-direction: row;
+                }
+            }
+        }
+        .proyectos3 {
+            display: flex;
+            flex-direction: column;
+            section {
+                section {
+                    display: flex;
+                    flex-direction: row;
+                }
+            }
+        }
+        .proyectos4 {
+            display: flex;
+            flex-direction: column;
+            section {
+                section {
+                    display: flex;
+                    flex-direction: row;
+                }
+            }
+        }
+    }
+}
+
+/*DISPOSITIVO CHICOS // SM */
+@media (max-width: 375px) {
+    .grillapro {
+        grid-template-rows: 1fr 4fr 4fr 4fr 4fr 0.5fr 0.5fr;
+        .proyectos1 {
+            display: flex;
+            flex-direction: column;
+            section {
+                section {
+                    display: flex;
+                    flex-direction: column;
+                }
+            }
+        }
+        .proyectos2 {
+            display: flex;
+            flex-direction: column;
+            section {
+                section {
+                    display: flex;
+                    flex-direction: column;
+                }
+            }
+        }
+        .proyectos3 {
+            display: flex;
+            flex-direction: column;
+            section {
+                section {
+                    display: flex;
+                    flex-direction: column;
+                }
+            }
+        }
+        .proyectos4 {
+            display: flex;
+            flex-direction: column;
+            section {
+                section {
+                    display: flex;
+                    flex-direction: column;
+                }
+            }
+        }
+    }
+}
