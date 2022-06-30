@@ -1,0 +1,6 @@
+/*INDEX*/
+@mixin mixint($fuente, $espacio) {
+    font-family: 'Montserrat', sans-serif;
+    font-size: $fuente;
+    letter-spacing: $espacio;
+}

@@ -41,15 +41,11 @@
         justify-content: center;
 
         .t1 {
-            font-family: 'Montserrat', sans-serif;
-            font-size: 20px;
-            letter-spacing: 4px;
+            @include mixint(20px,4px);
         }
 
         .t2 {
-            font-family: 'Montserrat', sans-serif;
-            font-size: 45px;
-            letter-spacing: 5px;
+            @include mixint(45px,5px);
         }
     }
 
