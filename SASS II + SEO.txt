@@ -1,0 +1,10 @@
+﻿SASS II + SEO
+1. Agrego carpeta “variables” para incluir extend y mixin
+2. Agrego extend para elementos de la página Servicios
+3. Agrego extend para elementos de la página Proyectos
+4. Agrego mixin para elementos de la página Index
+5. Agrego keywords en mis paginas
+6. Verifico que todas mis paginas tengan un h1
+7. Cambio los titulos de las cinco paginas
+8. Agrego un description a mi index
+9. Ordeno las paginas, salvo la principal, en una carpeta “paginas”
